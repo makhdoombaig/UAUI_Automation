@@ -37,7 +37,7 @@ WebAutomation_Framwork/
 
 2. **Run tests:**
    ```sh
-   npx playwright test
+   npx playwright install --with-deps
    ```
 
 3. **View reports:**
