@@ -12,8 +12,8 @@ export class LoginPage {
     }
 
     async login(username: string, password: string) {
-        await this.page.locator('#login-form-email').fill(username);
-        await this.page.locator('#login-form-password').fill(password);
+        await this.page.locator('#login-form-email').pressSequentially(username);
+        await this.page.locator('#login-form-password').pressSequentially(password);
         
         await this.page.locator('.card-body .btn-primary').first().click();
        
